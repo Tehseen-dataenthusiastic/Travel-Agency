@@ -15,7 +15,7 @@ const ContactForm = () => {
   const [status, setStatus] = useState({ type: '', message: '' });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const vehicleTypes = ['Swift Dzire', 'Innova Crysta', 'Tempo Traveller', 'Any'];
+  const vehicleTypes = ['Swift Dzire', 'Innova Crysta', 'Tempo Traveller', 'Tata Winger AC','Luxury Bus', 'Any'];
 
   const validateForm = () => {
     const newErrors = {};
@@ -125,16 +125,16 @@ const ContactForm = () => {
             <div className="bg-white p-4 rounded-lg shadow text-center">
               <span className="text-2xl mb-2 block">📞</span>
               <p className="text-sm text-gray-600">Phone</p>
-              <a href="tel:+919822234911" className="font-semibold text-gray-800 hover:text-primary-600 transition-colors">
-                +91 9822234911
-              </a>
+              <p className="font-semibold text-gray-800">
+                {import.meta.env.VITE_PHONE_NUMBER || '+91 9822234911'}
+              </p>
             </div>
             <div className="bg-white p-4 rounded-lg shadow text-center">
               <span className="text-2xl mb-2 block">📧</span>
               <p className="text-sm text-gray-600">Email</p>
-              <a href="mailto:manojtravels592@gmail.com" className="font-semibold text-gray-800 hover:text-primary-600 transition-colors text-sm">
-                manojtravels592@gmail.com
-              </a>
+              <p className="font-semibold text-gray-800">
+                {import.meta.env.VITE_EMAIL || 'manojtravels592@gmail.com'}
+              </p>
             </div>
             <div className="bg-white p-4 rounded-lg shadow text-center">
               <span className="text-2xl mb-2 block">📍</span>
