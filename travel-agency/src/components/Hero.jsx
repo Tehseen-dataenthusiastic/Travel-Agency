@@ -23,7 +23,7 @@ const Hero = () => {
       </div>
 
       {/* Content */}
-      <div className="relative z-10 container mx-auto px-4 text-center text-white">
+      <div className="relative z-10 container mx-auto px-6 text-center text-white">
         {/* Badge */}
         <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md border border-white/20 rounded-full px-6 py-2 mb-6 animate-fade-in-down">
           <span className="text-accent-400 text-sm font-semibold">★★★★★</span>
@@ -55,7 +55,7 @@ const Hero = () => {
           </button>
 
           <a
-            href="tel:+919999999999"
+            href="tel:+919822234911"
             className="bg-white/10 backdrop-blur-md border-2 border-white/30 hover:bg-white/20 text-white font-bold py-4 px-10 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-xl flex items-center gap-2"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -72,7 +72,7 @@ const Hero = () => {
             <div className="text-sm md:text-base text-gray-200">Years Experience</div>
           </div>
           <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 transform hover:scale-105 transition-transform">
-            <div className="text-3xl md:text-4xl font-bold text-accent-400 mb-1">₹18</div>
+            <div className="text-3xl md:text-4xl font-bold text-accent-400 mb-1">₹15</div>
             <div className="text-sm md:text-base text-gray-200">Per KM Starting</div>
           </div>
           <div className="bg-white/10 backdrop-blur-md border border-white/20 rounded-2xl p-4 transform hover:scale-105 transition-transform">
@@ -86,12 +86,6 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* Scroll Down Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce z-20">
-        <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-        </svg>
-      </div>
     </section>
   );
 };

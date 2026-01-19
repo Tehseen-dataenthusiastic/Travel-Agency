@@ -110,8 +110,8 @@ const ContactForm = () => {
   };
 
   return (
-    <section id="contact" className="py-20 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <section id="contact" className="py-14 bg-gray-50">
+      <div className="container mx-auto px-6">
         <h2 className="text-4xl font-bold text-center text-primary-700 mb-4">
           Contact Us
         </h2>
@@ -125,16 +125,16 @@ const ContactForm = () => {
             <div className="bg-white p-4 rounded-lg shadow text-center">
               <span className="text-2xl mb-2 block">📞</span>
               <p className="text-sm text-gray-600">Phone</p>
-              <p className="font-semibold text-gray-800">
-                {import.meta.env.VITE_PHONE_NUMBER || '+91 9999999999'}
-              </p>
+              <a href="tel:+919822234911" className="font-semibold text-gray-800 hover:text-primary-600 transition-colors">
+                +91 9822234911
+              </a>
             </div>
             <div className="bg-white p-4 rounded-lg shadow text-center">
               <span className="text-2xl mb-2 block">📧</span>
               <p className="text-sm text-gray-600">Email</p>
-              <p className="font-semibold text-gray-800">
-                {import.meta.env.VITE_EMAIL || 'info@punetravels.com'}
-              </p>
+              <a href="mailto:manojtravels592@gmail.com" className="font-semibold text-gray-800 hover:text-primary-600 transition-colors text-sm">
+                manojtravels592@gmail.com
+              </a>
             </div>
             <div className="bg-white p-4 rounded-lg shadow text-center">
               <span className="text-2xl mb-2 block">📍</span>
