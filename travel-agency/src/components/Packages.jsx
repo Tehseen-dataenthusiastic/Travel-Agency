@@ -89,8 +89,8 @@ const Packages = () => {
   ];
 
   return (
-    <section id="packages" className="py-20 bg-gradient-to-b from-gray-50 to-white">
-      <div className="container mx-auto px-4">
+    <section id="packages" className="py-14 bg-gradient-to-b from-gray-50 to-white">
+      <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-2 bg-accent-100 text-accent-700 rounded-full text-sm font-semibold mb-4">
@@ -185,16 +185,11 @@ const Packages = () => {
                   <span className="font-semibold">Includes:</span> {pkg.inclusions.join(', ')}
                 </div>
 
-                {/* Price & CTA */}
-                <div className="flex items-center justify-between pt-4 border-t border-gray-200">
-                  <div>
-                    <p className="text-xs text-gray-500">Starting from</p>
-                    <p className="text-2xl font-bold text-primary-700">{pkg.price}</p>
-                    <p className="text-xs text-gray-500">per vehicle</p>
-                  </div>
+                {/* CTA */}
+                <div className="pt-4 border-t border-gray-200">
                   <button
                     onClick={() => document.getElementById('contact').scrollIntoView({ behavior: 'smooth' })}
-                    className="bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl flex items-center gap-2 text-sm"
+                    className="w-full bg-gradient-to-r from-primary-600 to-primary-700 hover:from-primary-700 hover:to-primary-800 text-white px-6 py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-[1.02] shadow-lg hover:shadow-xl flex items-center justify-center gap-2 text-sm"
                   >
                     Book Now
                     <ArrowRight className="w-4 h-4" />
@@ -226,7 +221,7 @@ const Packages = () => {
                 Request Custom Package
               </button>
               <a
-                href="tel:+919999999999"
+                href="tel:+919822234911"
                 className="bg-accent-500 hover:bg-accent-600 text-white px-8 py-4 rounded-full font-bold text-lg transition-all duration-300 transform hover:scale-105 shadow-xl flex items-center justify-center gap-2"
               >
                 <Users className="w-5 h-5" />

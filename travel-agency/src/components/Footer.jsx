@@ -12,7 +12,7 @@ const Footer = () => {
 
   return (
     <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
-      <div className="container mx-auto px-4 py-12">
+      <div className="container mx-auto px-6 py-12">
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           {/* Company Info */}
           <div>
@@ -91,16 +91,16 @@ const Footer = () => {
               <li className="flex items-start gap-3 text-gray-400">
                 <Phone className="w-5 h-5 text-accent-400 flex-shrink-0 mt-1" />
                 <div>
-                  <a href="tel:+919999999999" className="hover:text-accent-400 transition-colors">
-                    +91 9999999999
+                  <a href="tel:+919822234911" className="hover:text-accent-400 transition-colors">
+                    +91 9822234911
                   </a>
                 </div>
               </li>
               <li className="flex items-start gap-3 text-gray-400">
                 <Mail className="w-5 h-5 text-accent-400 flex-shrink-0 mt-1" />
                 <div>
-                  <a href="mailto:info@punetravels.com" className="hover:text-accent-400 transition-colors">
-                    info@punetravels.com
+                  <a href="mailto:manojtravels592@gmail.com" className="hover:text-accent-400 transition-colors">
+                    manojtravels592@gmail.com
                   </a>
                 </div>
               </li>

@@ -29,8 +29,8 @@ const Testimonials = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-50 to-white">
-      <div className="container mx-auto px-4">
+    <section className="py-14 bg-gradient-to-b from-gray-50 to-white">
+      <div className="container mx-auto px-6">
         <div className="text-center mb-16">
           <span className="inline-block px-4 py-2 bg-accent-100 text-accent-700 rounded-full text-sm font-semibold mb-4">
             Testimonials
