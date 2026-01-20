@@ -1,14 +1,15 @@
 import { Phone } from 'lucide-react';
 
 const FloatingActionButtons = () => {
-  const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || '919822234911';
-  const phoneNumber = import.meta.env.VITE_PHONE_NUMBER || '+919822234911';
+  const whatsappNumber = '919822234911';
+  const phoneNumber = '+919822234911';
+  const whatsappMessage = encodeURIComponent('Hello, This is Pune Travelers! How may I help you?');
 
   return (
     <div className="fixed bottom-6 right-6 z-40 flex flex-col gap-3">
       {/* WhatsApp Button */}
       <a
-        href={`https://wa.me/${whatsappNumber}`}
+        href={`https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${whatsappMessage}`}
         target="_blank"
         rel="noopener noreferrer"
         className="bg-[#25D366] hover:bg-[#128C7E] text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-110 group"

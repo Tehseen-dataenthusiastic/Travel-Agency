@@ -6,7 +6,6 @@ const Testimonials = () => {
       name: 'Rajesh Sharma',
       role: 'Corporate Client',
       company: 'Tech Solutions Pvt Ltd',
-      image: '/images/testimonials/client-1.jpg',
       text: 'We have been using Pune Travelers for our corporate events for the past 3 years. Their punctuality and professionalism are unmatched. Highly recommended!',
       rating: 5
     },
@@ -14,7 +13,6 @@ const Testimonials = () => {
       name: 'Priya Deshmukh',
       role: 'Wedding Client',
       company: 'December 2023 Wedding',
-      image: '/images/testimonials/client-2.jpg',
       text: 'They handled all our wedding guest transportation flawlessly. The vehicles were decorated beautifully and all guests reached on time. Thank you for making our day special!',
       rating: 5
     },
@@ -22,7 +20,6 @@ const Testimonials = () => {
       name: 'Amit Patil',
       role: 'School Administrator',
       company: 'Bright Future School',
-      image: '/images/testimonials/client-3.jpg',
       text: 'Safety is our top priority for school trips, and Pune Travelers exceeds our expectations every time. Verified drivers and well-maintained vehicles give us complete peace of mind.',
       rating: 5
     }
@@ -71,17 +68,10 @@ const Testimonials = () => {
               </p>
 
               {/* Client Info */}
-              <div className="flex items-center gap-4 pt-4 border-t border-gray-100">
-                <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-12 h-12 rounded-full object-cover"
-                />
-                <div>
-                  <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
-                  <p className="text-sm text-gray-600">{testimonial.role}</p>
-                  <p className="text-xs text-gray-500">{testimonial.company}</p>
-                </div>
+              <div className="pt-4 border-t border-gray-100">
+                <h4 className="font-semibold text-gray-900">{testimonial.name}</h4>
+                <p className="text-sm text-gray-600">{testimonial.role}</p>
+                <p className="text-xs text-gray-500">{testimonial.company}</p>
               </div>
             </div>
           ))}

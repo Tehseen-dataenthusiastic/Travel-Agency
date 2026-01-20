@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Send, CheckCircle, AlertCircle } from 'lucide-react';
+import emailjs from '@emailjs/browser';
 
 
 const ContactForm = () => {
@@ -64,27 +65,22 @@ const ContactForm = () => {
     setIsSubmitting(true);
 
     try {
-      // Web3Forms API endpoint
-      const response = await fetch('https://api.web3forms.com/submit', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({
-          access_key: import.meta.env.VITE_WEB3FORMS_ACCESS_KEY,
-          name: formData.name,
-          phone: formData.phone,
-          pickup_location: formData.pickup,
-          vehicle_type: formData.vehicleType,
-          message: formData.message,
-          subject: 'New Booking Inquiry from Pune Travelers Website',
-          from_name: 'Pune Travelers Website'
-        }),
-      });
+      // EmailJS configuration
+      const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
+      const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
+      const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
 
-      const result = await response.json();
+      const templateParams = {
+        from_name: formData.name,
+        phone: formData.phone,
+        pickup_location: formData.pickup,
+        vehicle_type: formData.vehicleType,
+        message: formData.message || 'No additional message',
+      };
 
-      if (result.success) {
+      const result = await emailjs.send(serviceId, templateId, templateParams, publicKey);
+
+      if (result.status === 200) {
         setStatus({
           type: 'success',
           message: 'Thank you! We will contact you shortly.'
@@ -121,25 +117,25 @@ const ContactForm = () => {
 
         <div className="max-w-2xl mx-auto">
           {/* Contact Info Cards */}
-          <div className="grid md:grid-cols-3 gap-4 mb-8">
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
             <div className="bg-white p-4 rounded-lg shadow text-center">
               <span className="text-2xl mb-2 block">📞</span>
               <p className="text-sm text-gray-600">Phone</p>
-              <p className="font-semibold text-gray-800">
-                {import.meta.env.VITE_PHONE_NUMBER || '+91 9822234911'}
+              <p className="font-semibold text-gray-800 text-sm">
+                +91 9822234911
               </p>
             </div>
-            <div className="bg-white p-4 rounded-lg shadow text-center">
+            <div className="bg-white p-4 rounded-lg shadow text-center col-span-2">
               <span className="text-2xl mb-2 block">📧</span>
               <p className="text-sm text-gray-600">Email</p>
-              <p className="font-semibold text-gray-800">
-                {import.meta.env.VITE_EMAIL || 'manojtravels592@gmail.com'}
+              <p className="font-semibold text-gray-800 text-sm whitespace-nowrap">
+                manojtravels592@gmail.com
               </p>
             </div>
             <div className="bg-white p-4 rounded-lg shadow text-center">
               <span className="text-2xl mb-2 block">📍</span>
               <p className="text-sm text-gray-600">Location</p>
-              <p className="font-semibold text-gray-800">Pune, Maharashtra</p>
+              <p className="font-semibold text-gray-800 text-sm">Pune, Maharashtra</p>
             </div>
           </div>
 
