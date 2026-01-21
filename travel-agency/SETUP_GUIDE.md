@@ -32,8 +32,8 @@ npm install
    VITE_WEB3FORMS_ACCESS_KEY=your_actual_access_key_here
 
    # Contact Information
-   VITE_PHONE_NUMBER=+919822234911
-   VITE_WHATSAPP_NUMBER=+919822234911
+   VITE_PHONE_NUMBER=+919822999865
+   VITE_WHATSAPP_NUMBER=+919822999865
    VITE_EMAIL=manojtravels592@gmail.com
    ```
 
@@ -81,8 +81,8 @@ The production build will be in the `dist/` folder.
 | Variable | Purpose | Example |
 |----------|---------|---------|
 | `VITE_WEB3FORMS_ACCESS_KEY` | Contact form submissions | `abc123...` |
-| `VITE_PHONE_NUMBER` | Display phone number | `+919822234911` |
-| `VITE_WHATSAPP_NUMBER` | WhatsApp chat link | `+919822234911` (no +) |
+| `VITE_PHONE_NUMBER` | Display phone number | `+919822999865` |
+| `VITE_WHATSAPP_NUMBER` | WhatsApp chat link | `+919822999865` (no +) |
 | `VITE_EMAIL` | Display email address | `manojtravels592@gmail.com` |
 
 ### Where Are These Used?

@@ -122,7 +122,7 @@ const ContactForm = () => {
               <span className="text-2xl mb-2 block">📞</span>
               <p className="text-sm text-gray-600">Phone</p>
               <p className="font-semibold text-gray-800 text-sm">
-                +91 9822234911
+                +91 9822999865
               </p>
             </div>
             <div className="bg-white p-4 rounded-lg shadow text-center col-span-2">

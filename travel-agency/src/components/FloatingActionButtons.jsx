@@ -1,8 +1,8 @@
 import { Phone } from 'lucide-react';
 
 const FloatingActionButtons = () => {
-  const whatsappNumber = '919822234911';
-  const phoneNumber = '+919822234911';
+  const whatsappNumber = '919822999865';
+  const phoneNumber = '+919822999865';
   const whatsappMessage = encodeURIComponent('Hello, This is Pune Travelers! How may I help you?');
 
   return (

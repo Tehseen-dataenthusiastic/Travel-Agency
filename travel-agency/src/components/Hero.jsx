@@ -55,7 +55,7 @@ const Hero = () => {
           </button>
 
           <a
-            href="tel:+919822234911"
+            href="tel:+919822999865"
             className="bg-white/10 backdrop-blur-md border-2 border-white/30 hover:bg-white/20 text-white font-bold py-4 px-10 rounded-full text-lg transition-all duration-300 transform hover:scale-105 shadow-xl flex items-center gap-2"
           >
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">

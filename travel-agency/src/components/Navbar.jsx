@@ -82,7 +82,7 @@ const Navbar = () => {
 
             {/* Call Button */}
             <a
-              href="tel:+919822234911"
+              href="tel:+919822999865"
               className="flex items-center gap-2 bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-600 hover:to-accent-700 text-white px-6 py-2.5 rounded-full font-semibold transition-all duration-300 transform hover:scale-105 shadow-lg hover:shadow-xl"
             >
               <Phone className="w-4 h-4" />
@@ -93,7 +93,7 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center gap-3">
             <a
-              href="tel:+919822234911"
+              href="tel:+919822999865"
               className="bg-accent-500 hover:bg-accent-600 text-white p-2 rounded-full transition-colors"
             >
               <Phone className="w-5 h-5" />
@@ -157,7 +157,7 @@ const Navbar = () => {
           {/* Mobile CTA */}
           <div className="p-4 bg-gray-50">
             <a
-              href="tel:+919822234911"
+              href="tel:+919822999865"
               className="flex items-center justify-center gap-2 w-full bg-gradient-to-r from-accent-500 to-accent-600 hover:from-accent-600 hover:to-accent-700 text-white px-6 py-3 rounded-full font-semibold transition-all duration-300 shadow-lg"
             >
               <Phone className="w-5 h-5" />
